@@ -1,514 +1,302 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Cricket & Casino - Online Betting</title>
-    <meta
-      name="description"
-      content="Cricket and Casino online betting platform with 5% joining bonus and 8% losing bonus. Join and bet via WhatsApp."
-    />
-    <meta
-      name="keywords"
-      content="cricket betting, casino, online betting, bonus, whatsapp"
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Big Daddy</title>
 
-    <!-- Favicons -->
-    <link href="" rel="icon" />
-    <link href="" rel="apple-touch-icon" />
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
-   
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/img/bidaddy.png" />
+    <link rel="apple-touch-icon" href="/assets/img/bidaddy.png" />
+    <link rel="shortcut icon" href="/assets/img/bidaddy.png" />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Vendor CSS Files -->
     <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-    <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
 
-    <!--
-    NOTE:
-    - All primary CTAs point to WhatsApp:
-      https://wa.me/919166334757?text=Hi%20I%20want%20to%20join%20Cricket%20and%20Casino%20betting
-    - Replace 919166334757 with your number.
-  -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <!-- Meta Pixel Code -->
-      <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '2097788211046528');
-      fbq('track', 'PageView');
-      </script>
-      <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=2097788211046528&ev=PageView&noscript=1"
-      /></noscript>
-      <!-- End Meta Pixel Code -->
+      body {
+        background: #000;
+        color: #fff;
+      }
+
+      /* ================= TOP SECTION ================= */
+      .top-section {
+        background: #000;
+        text-align: center;
+        padding: 70px 20px 50px;
+        animation: fadeDown 1.2s ease;
+      }
+
+      .logo {
+        width: 140px;
+        margin-bottom: 22px;
+      }
+
+      .top-section h2 {
+        color: #d4af37;
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin-bottom: 18px;
+      }
+
+      .whatsapp-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 14px 34px;
+        background: #25d366;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        border-radius: 40px;
+        transition: all 0.3s ease;
+      }
+
+      .whatsapp-btn:hover {
+        transform: scale(1.06);
+        box-shadow: 0 0 25px rgba(37, 211, 102, 0.6);
+      }
+
+      /* ================= IMAGE SECTION ================= */
+      .banner-section {
+        padding: 40px 15px;
+        animation: fadeUp 1.4s ease;
+      }
+
+      .banner {
+        max-width: 1100px;
+        margin: auto;
+        border-radius: 18px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .banner img {
+        width: 100%;
+        display: block;
+        border-radius: 18px;
+      }
+
+      /* ================= ANIMATIONS ================= */
+      @keyframes fadeDown {
+        from {
+          opacity: 0;
+          transform: translateY(-40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* ================= RESPONSIVE ================= */
+      @media (max-width: 768px) {
+        .logo {
+          width: 110px;
+        }
+
+        .top-section h2 {
+          font-size: 15px;
+        }
+      }
+
+      .top-cta {
+        background: #000;
+        text-align: center;
+        /* padding: 90px 20px 70px; */
+        animation: fadeDown 1s ease;
+      }
+
+      .top-cta h1 {
+        color: #f5c542;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 14px;
+      }
+
+      .arrows {
+        font-size: 30px;
+        margin-bottom: 28px;
+        animation: bounce 1.4s infinite;
+      }
+
+      .whatsapp-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        padding: 18px 44px;
+        background: #25d366;
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 50px;
+        box-shadow: 0 0 0 rgba(37, 211, 102, 0.6);
+        animation: pulse 2s infinite;
+        transition: transform 0.25s ease;
+      }
+
+      .whatsapp-cta:hover {
+        transform: scale(1.08);
+      }
+
+      .whatsapp-cta .icon {
+        font-size: 20px;
+      }
+
+      /* Animations */
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(8px);
+        }
+      }
+
+      @keyframes pulse {
+        0% {
+          box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+        }
+        70% {
+          box-shadow: 0 0 0 25px rgba(37, 211, 102, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+        }
+      }
+
+      @keyframes fadeDown {
+        from {
+          opacity: 0;
+          transform: translateY(-30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Mobile */
+      @media (max-width: 768px) {
+        .top-cta h1 {
+          font-size: 22px;
+        }
+
+        .whatsapp-cta {
+          font-size: 17px;
+          padding: 16px 34px;
+        }
+      }
+
+      /* ================= FOOTER ================= */
+      .footer {
+        background: #000;
+        text-align: center;
+        padding: 40px 20px 50px;
+      }
+
+      .footer-divider {
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(
+          to right,
+          transparent,
+          rgba(255, 215, 0, 0.6),
+          transparent
+        );
+        margin-bottom: 26px;
+      }
+
+      .footer-text {
+        font-size: 13px;
+        color: #9fb3c8; /* soft blue-grey like image */
+        line-height: 1.8;
+        margin-bottom: 8px;
+      }
+
+      .footer-copy {
+        margin-top: 18px;
+        font-size: 13px;
+        color: #f5c542; /* gold */
+        font-weight: 500;
+      }
+    </style>
   </head>
 
-  <!-- Floating WhatsApp Button -->
-<a
-  href="https://wa.me/919166334757?text=Hi%20I%20want%20to%20join"
-  class="whatsapp-pill"
-  target="_blank"
->
-  <span class="whatsapp-icon">
-    <i class="bi bi-whatsapp"></i>
-  </span>
-  <span class="whatsapp-text">WhatsApp</span>
-</a>
+  <body>
+    <!-- ================= TOP ================= -->
+    <section class="top-section">
+      <img src="/assets/img/bidaddy.png" class="logo" alt="BigDaddy Logo" />
+    </section>
+    <section class="top-cta">
+      <h1>GET YOUR ID NOW ON WHATSAPP 👇</h1>
 
-<style>
-.whatsapp-pill {
-  position: fixed;
-  bottom: 80px;
-  right: 15px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+      <div class="arrows">👇👇</div>
 
-  background: #ffffff;
-  color: #25d366;
-  padding: 12px 20px;
-  border-radius: 50px;
-
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 600;
-
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
-  z-index: 999;
-
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.whatsapp-pill:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.3);
-}
-
-.whatsapp-icon {
-  width: 40px;
-  height: 40px;
-  background: #25d366;
-  color: white;
-  border-radius: 50%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-size: 22px;
-}
-
-
-</style>
-
-
-  <body class="index-page">
-    <header id="header" class="header d-flex align-items-center sticky-top">
-      <div
-        class="container-fluid container-xl position-relative d-flex align-items-center"
+      <a
+        href="https://wa.me/+919166334757"
+        class="whatsapp-cta"
+        target="_blank"
       >
-        <a href="#hero" class="logo d-flex align-items-center me-auto">
-          <!-- <h1 class="sitename">Cricket &amp; Casino</h1> -->
-          <img
-            src="assets/img/bidaddy.png"
-            class="img-grid-main w-15 h-15"
-            alt="logo"
-          />
-        </a>
+        <i class="fa-brands fa-whatsapp icon"></i>
+        Whatsapp Now
+        <i class="fa-brands fa-whatsapp icon"></i>
+      </a>
+    </section>
 
-        <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="#hero" class="active">Home</a></li>
-            <!-- <li><a href="#about">Why Us</a></li>
-            <li><a href="#services">Games</a></li>
-            <li><a href="#how-we-work">How to Play</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#contact">Contact</a></li> -->
-          </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav>
-
-        <a
-          class="btn-getstarted"
-          href="https://wa.me/919166334757?text=Hi%20I%20want%20to%20join%20Cricket%20and%20Casino%20betting"
-          >Join</a
-        >
+    <!-- ================= BIG IMAGE ================= -->
+    <section class="banner-section">
+      <div class="banner">
+        <img src="/assets/img/casino.jpeg" alt="BigDaddy 99 Banner" />
       </div>
-    </header>
+    </section>
 
-    <main class="main">
-      <!-- Hero Section -->
-      <section id="hero" class="hero section dark-background">
-        <div class="container" data-aos="fade-up">
-          <div class="row align-items-center">
-            <div class="col-lg-6">
-              <div class="hero-content" data-aos="fade-up" data-aos-delay="100">
-                <div class="hero-tag">
-                  <i class="bi bi-trophy"></i>
-                  <span>Cricket &amp; Casino Online Betting</span>
-                </div>
-                <h1>
-                  Bet on
-                  <span class="highlight">Cricket &amp; Casino</span> with Daily
-                  Bonuses
-                </h1>
-                <p class="lead">
-                  Enjoy live cricket betting and popular casino games with
-                  instant support, secure transactions, and daily cashback.
-                </p>
-                <ul class="hero-features">
-                  <li>
-                    <i class="bi bi-check-circle"></i>
-                    <strong>5% Joining Bonus</strong>&nbsp;on first deposit
-                  </li>
-                  <li>
-                    <i class="bi bi-check-circle"></i>
-                    <strong>3% Losing Bonus</strong>&nbsp;cashback on net loss
-                  </li>
-                  <li>
-                    <i class="bi bi-check-circle"></i> Fast deposits &amp;
-                    withdrawals via trusted gateways
-                  </li>
-                </ul>
-                <div class="hero-cta">
-                  <a
-                    href="https://wa.me/919166334757?text=Hi%20I%20want%20to%20join%20Cricket%20and%20Casino%20betting"
-                    class="btn btn-primary"
-                  >
-                    Join Now
-                  </a>
-                  <a
-                    href="https://wa.me/919166334757?text=Please%20share%20details%20of%20bonuses%20and%20offers"
-                    class="btn btn-link"
-                  >
-                    <i class="bi bi-whatsapp"></i> Get Offers
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div
-                class="hero-image-wrapper"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
-                <img
-                  src="assets/img/img1.jpg"
-                  alt=""
-                  class="img-fluid hero-image"
-                />
-                <div class="stat-card top-right">
-                  <div class="stat-value">5%</div>
-                  <div class="stat-label">Instant Joining Bonus</div>
-                  <div class="stat-icon">
-                    <i class="bi bi-gift"></i>
-                  </div>
-                </div>
-                <div class="stat-card bottom-left">
-                  <div class="stat-value">3%</div>
-                  <div class="stat-label">Losing Bonus Cashback</div>
-                  <div class="stat-icon">
-                    <i class="bi bi-arrow-counterclockwise"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /Hero Section -->
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="footer-divider"></div>
 
-      <!-- About Section -->
-      <section id="about" class="about section">
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row justify-content-center mb-5">
-           
+      <p class="footer-text">
+        18+ | Gamble Responsibly. This game involves financial risk and may be
+        addictive.
+      </p>
+      <p class="footer-text">
+        Please gamble responsibly and only with money you can afford to lose.
+      </p>
+      <p class="footer-text">
+        If you or someone you know has a gambling problem, please seek help.
+      </p>
 
-
-           <div class="row align-items-center about-showcase">
-            <div
-              class="col-lg-6 order-lg-2"
-              data-aos="fade-left"
-              data-aos-delay="300"
-            >
-              <div class="about-image-grid">
-                <img
-                  src="assets/img/img2.webp"
-                  class="img-grid-main"
-                  alt="Live betting interface"
-                />
-                <img
-                  src="assets/img/img3.jpg"
-                  class="img-grid-secondary"
-                  alt="Casino gaming"
-                />
-                <img
-                  src="assets/img/img4.jpg"
-                  class="img-grid-tertiary"
-                  alt="Players enjoying games"
-                />
-                <div
-                  class="experience-badge"
-                  data-aos="zoom-in"
-                  data-aos-delay="500"
-                >
-                  <span class="years">24/7</span>
-                  <span class="text">Support</span>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-6 order-lg-1"
-              data-aos="fade-right"
-              data-aos-delay="200"
-            >
-              <div class="about-content-box">
-                <h3>Easy Betting</h3>
-                <p class="mb-4">
-                  Just send us a message to register, deposit, and start betting
-                  on your favourite Cricket and Casino games. No complicated
-                  forms or KYC screens – everything is handled by our support
-                  team.
-                </p>
-
-                <div class="progress-item">
-                  <div class="d-flex justify-content-between">
-                    <span class="progress-title"
-                      >Fast Deposits &amp; Withdrawals</span
-                    >
-                    <span class="progress-percent">94%</span>
-                  </div>
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 94%"
-                      aria-valuenow="94"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </div>
-
-                <div class="progress-item">
-                  <div class="d-flex justify-content-between">
-                    <span class="progress-title"
-                      >Live Cricket &amp; Casino Coverage</span
-                    >
-                    <span class="progress-percent">87%</span>
-                  </div>
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 87%"
-                      aria-valuenow="87"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </div>
-
-                <div class="progress-item">
-                  <div class="d-flex justify-content-between">
-                    <span class="progress-title">User Satisfaction</span>
-                    <span class="progress-percent">92%</span>
-                  </div>
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 92%"
-                      aria-valuenow="92"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </div>
-
-                <a
-                  href="https://wa.me/919166334757?text=I%20want%20to%20know%20how%20to%20start%20betting"
-                  class="btn btn-discover mt-4"
-                  >Start</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /About Section -->
-    </main>
-
-    <footer id="footer" class="footer position-relative light-background">
-      <div class="container footer-top">
-        <div class="row gy-4">
-          <div class="col-lg-4 col-md-6 footer-about">
-            <a href="#hero" class="logo d-flex align-items-center">
-              <span class="sitename">Cricket &amp; Casino</span>
-            </a>
-            <div class="footer-contact pt-3">
-              <p>Online Betting Platform</p>
-              <p>Cricket &amp; Casino Games</p>
-              <p class="mt-3">
-                <strong>Join Now:</strong>
-                <span
-                  ><a
-                    href="https://wa.me/919166334757?text=Hi%2C%20I%20want%20to%20join%20your%20platform"
-                    >+91 919166334757</a
-                  ></span
-                >
-              </p>
-              <p>
-                <strong>Bonus:</strong>
-                <span>5% Joining &amp; 8% Losing Bonus*</span>
-              </p>
-            </div>
-            <div class="social-links d-flex mt-4">
-              <a
-                href="https://wa.me/919166334757?text=Hi%2C%20I%20am%20coming%20from%20your%20website"
-                ><i class="bi bi-whatsapp"></i
-              ></a>
-            </div>
-          </div>
-
-          <!-- <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><a href="#hero">Home</a></li>
-              <li><a href="#about">Why Us</a></li>
-              <li><a href="#services">Games</a></li>
-              <li><a href="#how-we-work">How to Play</a></li>
-              <li><a href="#faq">FAQ</a></li>
-            </ul>
-          </div> -->
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Bonuses</h4>
-            <ul>
-              <li>
-                <a
-                  href="https://wa.me/919166334757?text=Explain%205%25%20joining%20bonus"
-                  >5% Joining Bonus</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://wa.me/919166334757?text=Explain%208%25%20losing%20bonus"
-                  >8% Losing Bonus</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://wa.me/919166334757?text=What%20other%20promotions%20do%20you%20have%3F"
-                  >Other Promotions</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Games</h4>
-            <ul>
-              <li>
-                <a
-                  href="https://wa.me/919166334757?text=I%20want%20to%20bet%20on%20cricket"
-                  >Cricket</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://wa.me/919166334757?text=Show%20me%20casino%20games"
-                  >Casino</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://wa.me/919166334757?text=I%20want%20live%20games%20details"
-                  >Live Games</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Responsible Play</h4>
-            <ul>
-              <li>
-                <a
-                  href="https://wa.me/919166334757?text=I%20want%20to%20set%20betting%20limits"
-                  >Set Limits</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://wa.me/919166334757?text=Help%20me%20with%20responsible%20gaming"
-                  >Get Help</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="container copyright text-center mt-4">
-        <p>
-          © <span>Copyright</span>
-          <strong class="px-1 sitename">Cricket &amp; Casino</strong>
-          <span>All Rights Reserved</span>
-        </p>
-        <div class="credits">
-          <small
-            >*Bonuses are subject to terms and conditions. Please bet
-            responsibly.</small
-          >
-        </div>
-      </div>
+      <p class="footer-copy">
+        © 2025 BigDaddyExchange.com. All rights reserved.
+      </p>
     </footer>
-
-    <!-- Scroll Top -->
-    <a
-      href="#"
-      id="scroll-top"
-      class="scroll-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
-
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Main JS File -->
-    <script src="assets/js/main.js"></script>
   </body>
 </html>
